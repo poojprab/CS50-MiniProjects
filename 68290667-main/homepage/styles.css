@@ -1,0 +1,215 @@
+.header {
+    background-color: #996633;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.header2 {
+  background-color: #ACA0E3;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header3{
+  background-color: #610A6C;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.header4{
+  background-color: #E9D85B;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+h1 {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+h2 {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+h3 {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+h4 {
+    font-family: 'PT Serif', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+h5 {
+  font-family: 'PT Serif', sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'PT Serif', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+h7 {
+  font-family: 'PT Serif', sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+.container {
+    text-align: right;
+    margin-right: 100px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 20%;
+    border: 5px solid #996633;
+    margin-left: 70px;
+    padding-right: 0px;
+    text-align: center;
+    padding-left: 0px;
+    color: #996633;
+  }
+
+  .column2 {
+    float: left;
+    width: 50%;
+    padding-right: 0px;
+    text-align: center;
+    padding-left: 0px;
+    color: #610A6C;
+    font-size: 30px;
+  }
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom = 10px;
+    background-color = ffffff;
+  }
+
+  .about{
+    background-color: #996633;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom = 10px;
+    background-color = ffffff;
+  }
+
+  .pad {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+  button{
+    background-color: #996633;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+.home{
+  background-color: #996633;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.98rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+
+.alert{
+  text-align: center;
+  padding-bottom: 0px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'PT Serif', sans-serif;
+}
+
+input[type="text"] {
+  line-height: 20;
+  width: 60%;
+}
+.email{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.email2{
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #ACA0E3;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-family: 'PT Serif', sans-serif;
+  color: #ffffffff;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  vertical-align: middle;
+}
+
+.twit{
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #ACA0E3;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-family: 'PT Serif', sans-serif;
+  color: #ffffffff;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  vertical-align: middle;
+}
+
+input[type="text"]:hover {
+  background-color: #f5f5f5;
+  transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.imagecenter{
+  text-align: center;
+}

@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The run time significantly decreased between sorting the random5000 and the sorted5000 and bubble sort's runtime decreases from n^2 to n in the same way.
+
+sort2 uses: Merge Sort
+
+How do you know?: The run time did not significantly increase when switching between the random5000 and random10000, this is expected with the merge sort since the runtime graph is that of a log graph, which does not increase by much as well.
+
+sort3 uses: Selection Sort
+
+How do you know?: Since I already knew that sort1 was bubble, I chose the sort that had a runtime that increased more significantly when switching between random5000 and random10000.

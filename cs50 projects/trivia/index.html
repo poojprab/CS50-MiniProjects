@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                let corbutton = document.querySelector("#correct");
+                let incorbutton = document.querySelectorAll(".incorrect");
+                let result = document.querySelector("#result");
+
+                corbutton.addEventListener('click', function(){
+                    corbutton.style.backgroundColor = "green";
+                    result.innerHTML = "Correct";
+                })
+                for(let i = 0; i < incorbutton.length; i++){
+                    incorbutton[i].addEventListener('click', function(){
+                        incorbutton[i].style.backgroundColor = "red";
+                        result.innerHTML = "Incorrect";
+                    })
+                }
+            });
+
+            function answer()
+            {
+                let number = document.querySelector('#q').value;
+                let res = document.querySelector("#res");
+                if(number != 52){
+                    q.style.backgroundColor = "red";
+                    res.innerHTML = "Incorrect";
+                }
+                else{
+                    q.style.backgroundColor = "green";
+                    res.innerHTML = "Correct!";
+                }
+            }
+            document.querySelector('form').addEventListener('submit', answer);
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What do the 13 stars on the American flag represent?</h3>
+                <button class = "incorrect">The 13 First States</button>
+                <button id = "correct">The First 13 Colonies</button>
+                <button class = "incorrect">The First 13 Presidents</button>
+                <button class = "incorrect">The 13 Great Lakes</button>
+                <p id="result"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>How many weeks are in a year?</h3>
+                <form onsubmit = "answer(); return false;">
+                    <input autofocus id="q" type="text">
+                    <input type = "submit">
+                    <p id="res"></p>
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>
